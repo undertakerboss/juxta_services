@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juxta Services | Ingenio Llanero, Tecnología de Élite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f9fafb; }
+        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .hero-gradient { background: radial-gradient(circle at top right, #e0e7ff 0%, #ffffff 50%); }
+    </style>
+</head>
+<body class="hero-gradient text-slate-900">
+
+    <nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+        <div class="text-2xl font-extrabold tracking-tighter text-blue-600">JUXTA<span class="text-slate-400">SERVICES</span></div>
+        <div class="hidden md:flex space-x-8 font-medium text-slate-600">
+            <a href="#soluciones" class="hover:text-blue-600 transition">Soluciones</a>
+            <a href="#nosotros" class="hover:text-blue-600 transition">Nosotros</a>
+            <a href="#" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition shadow-lg shadow-blue-200">Contactar</a>
+        </div>
+    </nav>
+
+    <section class="max-w-7xl mx-auto px-8 py-20 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-12 md:mb-0">
+            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+                Su rentabilidad, <br><span class="text-blue-600">al máximo.</span>
+            </h1>
+            <p class="text-xl text-slate-600 mb-8 max-w-lg">
+                Fusionamos el ingenio llanero con tecnología de élite para optimizar su negocio. Gestión inteligente, control total.
+            </p>
+            <div class="flex space-x-4">
+                <a href="https://wa.me/tu-numero" class="bg-slate-900 text-white px-8 py-4 rounded-xl font-semibold hover:scale-105 transition">Comenzar Ahora</a>
+                <a href="#soluciones" class="px-8 py-4 rounded-xl font-semibold border border-slate-200 hover:bg-white transition">Ver Soluciones</a>
+            </div>
+        </div>
+        <div class="md:w-1/2 grid grid-cols-2 gap-4">
+            <div class="glass p-8 rounded-3xl shadow-xl transform translate-y-8">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg mb-4 flex items-center justify-center text-blue-600 font-bold">QR</div>
+                <h3 class="font-bold">MenuQR</h3>
+            </div>
+            <div class="glass p-8 rounded-3xl shadow-xl">
+                <div class="w-12 h-12 bg-purple-100 rounded-lg mb-4 flex items-center justify-center text-purple-600 font-bold">JB</div>
+                <h3 class="font-bold">JuxtaBook</h3>
+            </div>
+            <div class="col-span-2 glass p-8 rounded-3xl shadow-xl mt-4">
+                <div class="w-12 h-12 bg-amber-100 rounded-lg mb-4 flex items-center justify-center text-amber-600 font-bold">AN</div>
+                <h3 class="font-bold text-lg leading-tight text-slate-800">Anubis AMS</h3>
+                <p class="text-sm text-slate-500 mt-2">Control de activos industriales de alto nivel.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="soluciones" class="max-w-7xl mx-auto px-8 py-20 border-t border-slate-100">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold">Nuestra Escalera de Valor</h2>
+            <p class="text-slate-500">Soluciones diseñadas para cada etapa de su crecimiento.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <h4 class="text-blue-600 font-bold mb-2">Hostelería</h4>
+                <h3 class="text-xl font-bold mb-4">MenuQR</h3>
+                <p class="text-slate-600 mb-6 text-sm">Automatice sus pedidos y digitalice su atención al cliente.</p>
+                <ul class="text-xs space-y-2 text-slate-500 mb-6">
+                    <li>✓ Menú Digital</li>
+                    <li>✓ Pedidos por WhatsApp</li>
+                </ul>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <h4 class="text-purple-600 font-bold mb-2">Agendamiento</h4>
+                <h3 class="text-xl font-bold mb-4">JuxtaBook</h3>
+                <p class="text-slate-600 mb-6 text-sm">Software de citas para profesionales que valoran su tiempo.</p>
+                <ul class="text-xs space-y-2 text-slate-500 mb-6">
+                    <li>✓ Recordatorios Automáticos</li>
+                    <li>✓ Gestión de Clientes</li>
+                </ul>
+            </div>
+            <div class="bg-slate-900 p-8 rounded-2xl shadow-xl text-white">
+                <h4 class="text-amber-400 font-bold mb-2">Industria</h4>
+                <h3 class="text-xl font-bold mb-4">Anubis AMS</h3>
+                <p class="text-slate-400 mb-6 text-sm">Gestión de activos pesados y mantenimiento preventivo.</p>
+                <ul class="text-xs space-y-2 text-slate-300 mb-6">
+                    <li>✓ Trazabilidad de Maquinaria</li>
+                    <li>✓ Control de Costos</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-slate-400 text-sm">
+        &copy; 2026 Juxta Services - Yopal, Casanare. Innovación con Sello Llanero.
+    </footer>
+
+</body>
+</html>
