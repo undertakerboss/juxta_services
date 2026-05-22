@@ -3,120 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juxta Services | Ingeniería de Software y Soporte IT en Casanare</title>
+    <meta name="description" content="Juxta Services: Firma de Ingeniería de Software, Consultoría IT y Soporte Técnico en Yopal, Casanare. Soluciones para empresas, restaurantes e industria.">
+    <meta name="keywords" content="Soporte IT Yopal, Mantenimiento computadores Casanare, Menú QR, Software a medida, Infraestructura de redes, Juxta Services">
+    <title>Juxta Services | Ingeniería IT y Soluciones Tecnológicas en Casanare</title>
+    
+    <!-- Tailwind CSS & FontAwesome -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #f9fafb; scroll-behavior: smooth; }
-        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3); }
-        .hero-gradient { background: radial-gradient(circle at top right, #e0e7ff 0%, #ffffff 50%); }
-        /* Animación suave para el botón de WhatsApp */
-        .float-hover:hover { transform: translateY(-5px) scale(1.05); }
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; scroll-behavior: smooth; }
+        /* Efectos Glassmorphism y Gradientes Premium */
+        .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(226, 232, 240, 0.8); }
+        .hero-gradient { background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%); }
+        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+        /* Animación de Pulso para Conversión en WhatsApp */
+        @keyframes pulse-ring { 
+            0% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); } 
+            70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(34, 197, 94, 0); } 
+            100% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); } 
+        }
+        .wa-pulse { animation: pulse-ring 2s infinite; }
     </style>
 </head>
-<body class="hero-gradient text-slate-900 relative">
+<body class="text-slate-800 antialiased relative">
 
-    <a href="https://wa.me/573224754798?text=Hola%20Juxta%20Services,%20deseo%20agendar%20una%20Auditoría%20IT%20sin%20costo%20para%20mi%20negocio." target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full shadow-2xl flex items-center justify-center text-3xl float-hover transition-all z-50 ring-4 ring-green-300 ring-opacity-50">
+    <!-- Botón de Conversión Rápida (WhatsApp) -->
+    <a href="https://wa.me/573224754798?text=Hola%20Juxta%20Services,%20requiero%20soporte%20tecnológico%20para%20mi%20negocio." target="_blank" rel="noopener noreferrer" class="fixed bottom-8 right-8 bg-green-500 text-white w-16 h-16 rounded-full shadow-2xl flex items-center justify-center text-3xl transition-transform hover:scale-110 z-50 wa-pulse">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
-        <div class="text-2xl font-extrabold tracking-tighter text-blue-600">JUXTA<span class="text-slate-400">SERVICES</span></div>
-        <div class="hidden md:flex space-x-8 font-medium text-slate-600 items-center">
-            <a href="#soluciones" class="hover:text-blue-600 transition">Ecosistemas IT</a>
-            <a href="#nosotros" class="hover:text-blue-600 transition">Nuestra Firma</a>
-            <a href="https://wa.me/573224754798?text=Hola%20Juxta%20Services,%20requiero%20una%20consultoría%20para%20mi%20negocio." target="_blank" class="bg-blue-600 text-white px-6 py-2.5 rounded-full hover:bg-blue-700 transition shadow-lg shadow-blue-200">Consultoría Exprés</a>
+    <!-- Navegación Sticky -->
+    <nav class="glass-nav fixed w-full top-0 z-40 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold tracking-tighter text-blue-700">JUXTA<span class="text-slate-800">SERVICES</span></div>
+            <div class="hidden md:flex space-x-8 font-medium text-slate-600 items-center">
+                <a href="#servicios" class="hover:text-blue-700 transition">Ecosistema de Soluciones</a>
+                <a href="#metodologia" class="hover:text-blue-700 transition">Ingeniería & Soporte</a>
+                <a href="https://wa.me/573224754798?text=Hola%20Juxta%20Services,%20deseo%20agendar%20una%20Auditoría%20IT%20sin%20costo." target="_blank" class="bg-blue-700 text-white px-6 py-2.5 rounded-lg hover:bg-blue-800 transition shadow-md shadow-blue-200 font-semibold">Consultoría Exprés</a>
+            </div>
+            <!-- Menú Móvil Simple -->
+            <div class="md:hidden text-2xl text-slate-800">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </nav>
 
-    <section class="max-w-7xl mx-auto px-8 py-20 flex flex-col md:flex-row items-center">
-        <div class="md:w-1/2 mb-12 md:mb-0">
-            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
-                Blinde su operación. <br><span class="text-blue-600">Acelere sus ventas.</span>
-            </h1>
-            <p class="text-xl text-slate-600 mb-8 max-w-lg">
-                Firma de Ingeniería de Software y Soporte IT en Casanare. Transformamos negocios tradicionales en ecosistemas automatizados de alto rendimiento.
-            </p>
-            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                <a href="https://wa.me/573224754798?text=Hola%20Juxta%20Services,%20deseo%20agendar%20una%20Auditoría%20IT." class="bg-slate-900 text-white px-8 py-4 rounded-xl font-semibold hover:bg-slate-800 transition text-center shadow-xl">Agendar Auditoría IT</a>
-                <a href="#soluciones" class="px-8 py-4 rounded-xl font-semibold border border-slate-300 text-slate-700 hover:bg-white transition text-center">Ver Soluciones</a>
-            </div>
-        </div>
-        
-        <div class="md:w-1/2 grid grid-cols-2 gap-4">
-            <div class="glass p-8 rounded-3xl shadow-xl transform translate-y-8 border-t-4 border-blue-500">
-                <div class="w-12 h-12 bg-blue-100 rounded-lg mb-4 flex items-center justify-center text-blue-600 text-xl"><i class="fas fa-utensils"></i></div>
-                <h3 class="font-bold text-slate-800">Ecosistema POS</h3>
-                <p class="text-xs text-slate-500 mt-1">Alta Gastronomía</p>
-            </div>
-            <div class="glass p-8 rounded-3xl shadow-xl border-t-4 border-slate-800">
-                <div class="w-12 h-12 bg-slate-200 rounded-lg mb-4 flex items-center justify-center text-slate-700 text-xl"><i class="fas fa-server"></i></div>
-                <h3 class="font-bold text-slate-800">Soporte IT 24/7</h3>
-                <p class="text-xs text-slate-500 mt-1">Blindaje de Redes</p>
-            </div>
-            <div class="col-span-2 glass p-8 rounded-3xl shadow-xl mt-4 border-t-4 border-amber-500">
-                <div class="w-12 h-12 bg-amber-100 rounded-lg mb-4 flex items-center justify-center text-amber-600 text-xl"><i class="fas fa-industry"></i></div>
-                <h3 class="font-bold text-lg leading-tight text-slate-800">Anubis AMS Industrial</h3>
-                <p class="text-sm text-slate-600 mt-2">Gestión de activos pesados, maquinaria y mantenimiento predictivo.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="soluciones" class="max-w-7xl mx-auto px-8 py-20 border-t border-slate-200">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-extrabold text-slate-900">Nuestra Arquitectura Tecnológica</h2>
-            <p class="text-slate-500 mt-2 text-lg">No instalamos programas genéricos; diseñamos ecosistemas a medida.</p>
-        </div>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-lg transition">
-                <h4 class="text-blue-600 font-bold mb-2 uppercase text-xs tracking-wider">Sector Gastronómico & Retail</h4>
-                <h3 class="text-2xl font-bold mb-4 text-slate-800">Suite POS & Menú QR</h3>
-                <p class="text-slate-600 mb-6 text-sm">Acelere la rotación de sus mesas y controle su inventario al milímetro. Cero fugas, cero latencia.</p>
-                <ul class="text-sm space-y-3 text-slate-600 mb-8 font-medium">
-                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i> Comandas directas a cocina</li>
-                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i> Captura de clientes VIP (CRM)</li>
-                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i> Cuadre de caja automatizado</li>
-                </ul>
-            </div>
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-lg transition">
-                <h4 class="text-slate-500 font-bold mb-2 uppercase text-xs tracking-wider">Infraestructura & Hardware</h4>
-                <h3 class="text-2xl font-bold mb-4 text-slate-800">Soporte IT 24/7</h3>
-                <p class="text-slate-600 mb-6 text-sm">Su propio departamento de ingeniería en Yopal. Evite que fallas técnicas detengan su facturación.</p>
-                <ul class="text-sm space-y-3 text-slate-600 mb-8 font-medium">
-                    <li><i class="fas fa-shield-alt text-slate-700 mr-2"></i> Mantenimiento de computadores/cajas</li>
-                    <li><i class="fas fa-shield-alt text-slate-700 mr-2"></i> Estabilización de redes Wi-Fi/LAN</li>
-                    <li><i class="fas fa-shield-alt text-slate-700 mr-2"></i> Respuesta a emergencias críticas</li>
-                </ul>
-            </div>
-            <div class="bg-slate-900 p-8 rounded-2xl shadow-xl text-white transform hover:-translate-y-2 transition duration-300">
-                <h4 class="text-amber-400 font-bold mb-2 uppercase text-xs tracking-wider">Industria Petrolera & Agro</h4>
-                <h3 class="text-2xl font-bold mb-4">Anubis AMS</h3>
-                <p class="text-slate-400 mb-6 text-sm">Tome el control total de su maquinaria. Alertas predictivas e infraestructura cloud inquebrantable.</p>
-                <ul class="text-sm space-y-3 text-slate-300 mb-8 font-medium">
-                    <li><i class="fas fa-cogs text-amber-400 mr-2"></i> Trazabilidad de activos pesados</li>
-                    <li><i class="fas fa-cogs text-amber-400 mr-2"></i> Automatización de bases de datos</li>
-                    <li><i class="fas fa-cogs text-amber-400 mr-2"></i> Ingeniería de Software a medida</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <footer id="nosotros" class="bg-slate-50 border-t border-slate-200 py-12">
-        <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center">
-            <div class="mb-6 md:mb-0 text-center md:text-left">
-                <div class="text-xl font-extrabold tracking-tighter text-blue-600 mb-2">JUXTA<span class="text-slate-400">SERVICES</span></div>
-                <p class="text-slate-500 text-sm">&copy; 2026 Juxta Services Corp. Yopal, Casanare.<br>Ingeniería que multiplica rentabilidad.</p>
+    <!-- Hero Section (Captura de Demanda) -->
+    <header class="hero-gradient pt-32 pb-20 lg:pt-40 lg:pb-28 px-6 lg:px-8 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
+            <div class="lg:w-3/5 mb-12 lg:mb-0 pr-0 lg:pr-12 text-center lg:text-left">
+                <div class="inline-block bg-blue-100 text-blue-700 font-semibold px-4 py-1.5 rounded-full text-sm mb-6 border border-blue-200">
+                    <i class="fas fa-map-marker-alt mr-2"></i>Operando desde Yopal para toda Colombia
+                </div>
+                <h1 class="text-5xl lg:text-6xl font-extrabold leading-tight mb-6 text-slate-900">
+                    Blindamos su tecnología. <br><span class="text-blue-700">Multiplicamos su rentabilidad.</span>
+                </h1>
+                <p class="text-lg lg:text-xl text-slate-600 mb-8 max-w-2xl mx-auto lg:mx-0">
+                    No instalamos programas genéricos. Somos una firma de ingeniería que diseña ecosistemas a medida: desde infraestructura de redes hasta software avanzado y soporte 24/7.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center lg:justify-start">
+                    <a href="https://wa.me/573224754798?text=Hola%20Juxta%20Services,%20necesito%20un%20diagnóstico%20tecnológico." class="bg-slate-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-slate-800 transition text-center shadow-lg">Solicitar Diagnóstico IT</a>
+                    <a href="#servicios" class="px-8 py-4 rounded-lg font-semibold border border-slate-300 text-slate-700 hover:bg-white hover:border-slate-400 transition text-center bg-white/50 backdrop-blur-sm">Explorar Servicios</a>
+                </div>
             </div>
             
-            <div class="flex space-x-6 items-center">
-                <a href="https://www.facebook.com/JuxtaServices/" target="_blank" class="text-slate-400 hover:text-blue-600 text-2xl transition" title="Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/d1dertaker/" target="_blank" class="text-slate-400 hover:text-pink-600 text-2xl transition" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/eudes-ivan-plazas-olivo-1a6658214/" target="_blank" class="text-slate-400 hover:text-blue-700 text-2xl transition" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <div class="lg:w-2/5 grid grid-cols-2 gap-4 w-full">
+                <!-- Tarjetas de Autoridad Visual -->
+                <div class="bg-white p-6 rounded-2xl shadow-md border-t-4 border-blue-600">
+                    <div class="w-12 h-12 bg-blue-50 rounded-lg mb-4 flex items-center justify-center text-blue-600 text-xl"><i class="fas fa-server"></i></div>
+                    <h3 class="font-bold text-slate-800">Infraestructura IT</h3>
+                    <p class="text-xs text-slate-500 mt-1">Servidores y Redes LAN/VLAN</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-md border-t-4 border-slate-800 transform lg:translate-y-6">
+                    <div class="w-12 h-12 bg-slate-100 rounded-lg mb-4 flex items-center justify-center text-slate-700 text-xl"><i class="fas fa-laptop-medical"></i></div>
+                    <h3 class="font-bold text-slate-800">Soporte Técnico</h3>
+                    <p class="text-xs text-slate-500 mt-1">Mantenimiento y Respuesta Rápida</p>
+                </div>
+                <div class="col-span-2 bg-slate-900 p-6 rounded-2xl shadow-xl mt-2 border-t-4 border-amber-500 text-white">
+                    <div class="flex items-center justify-between mb-2">
+                        <div class="w-10 h-10 bg-amber-500/20 rounded-lg flex items-center justify-center text-amber-400"><i class="fas fa-code"></i></div>
+                        <span class="text-xs font-semibold bg-slate-800 px-2 py-1 rounded text-slate-300">Nivel Enterprise</span>
+                    </div>
+                    <h3 class="font-bold text-lg leading-tight">Ingeniería de Software</h3>
+                    <p class="text-sm text-slate-400 mt-1">Automatización de bases de datos y desarrollo a medida.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Barra de Autoridad (Trust Strip) -->
+    <div class="bg-slate-900 py-6">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center divide-x divide-slate-700">
+            <div>
+                <p class="text-2xl font-bold text-white">24/7</p>
+                <p class="text-xs font-medium text-slate-400 uppercase tracking-wider mt-1">Soporte Continuo</p>
+            </div>
+            <div>
+                <p class="text-2xl font-bold text-white">100%</p>
+                <p class="text-xs font-medium text-slate-400 uppercase tracking-wider mt-1">Enfoque en ROI</p>
+            </div>
+            <div>
+                <p class="text-2xl font-bold text-white"><i class="fas fa-shield-halved"></i></p>
+                <p class="text-xs font-medium text-slate-400 uppercase tracking-wider mt-1">Datos Asegurados</p>
+            </div>
+            <div>
+                <p class="text-2xl font-bold text-white"><i class="fas fa-microchip"></i></p>
+                <p class="text-xs font-medium text-slate-400 uppercase tracking-wider mt-1">Hardware & Cloud</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Servicios (Escalera de Valor) -->
+    <section id="servicios" class="max-w-7xl mx-auto px-6 lg:px-8 py-24">
+        <div class="text-center mb-16 max-w-3xl mx-auto">
+            <h2 class="text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4">Nuestro Ecosistema de Soluciones</h2>
+            <p class="text-slate-600 text-lg">Cubrimos todas las capas tecnológicas de su empresa. Desde el hardware físico hasta la arquitectura de datos en la nube.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Nivel 1: Hardware y Soporte -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 card-hover transition-all duration-300 flex flex-col">
+                <div class="w-14 h-14 bg-slate-100 text-slate-700 rounded-xl flex items-center justify-center text-2xl mb-6"><i class="fas fa-tools"></i></div>
+                <h3 class="text-xl font-bold mb-3 text-slate-900">Hardware & Soporte IT</h3>
+                <p class="text-slate-600 mb-6 text-sm flex-grow">Mantenimiento preventivo, despliegue de pantallas, armado de equipos e instalación de redes. Solucionamos emergencias para que usted no detenga su operación.</p>
+                <ul class="text-sm space-y-2 text-slate-700 mb-6 font-medium">
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Instalación y configuración física</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Mantenimiento preventivo</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Contratos de soporte mensual</li>
+                </ul>
+            </div>
+
+            <!-- Nivel 2: Transformación Digital & POS -->
+            <div class="bg-white p-8 rounded-2xl shadow-md border border-blue-100 relative card-hover transition-all duration-300 flex flex-col ring-1 ring-blue-600/10">
+                <div class="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-xl uppercase tracking-wider">Alta Demanda</div>
+                <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-2xl mb-6"><i class="fas fa-qrcode"></i></div>
+                <h3 class="text-xl font-bold mb-3 text-slate-900">Transformación Digital B2B</h3>
+                <p class="text-slate-600 mb-6 text-sm flex-grow">Sistemas POS integrales, control de inventarios y despliegue de Menús QR Inteligentes para restaurantes y comercio retail.</p>
+                <ul class="text-sm space-y-2 text-slate-700 mb-6 font-medium">
+                    <li><i class="fas fa-check text-blue-600 mr-2"></i> Agilización de comandas</li>
+                    <li><i class="fas fa-check text-blue-600 mr-2"></i> Automatización de bases de datos</li>
+                    <li><i class="fas fa-check text-blue-600 mr-2"></i> Consultoría en flujos de trabajo</li>
+                </ul>
+            </div>
+
+            <!-- Nivel 3: Cloud & Software a Medida -->
+            <div class="bg-slate-900 p-8 rounded-2xl shadow-xl text-white card-hover transition-all duration-300 flex flex-col border border-slate-700">
+                <div class="w-14 h-14 bg-slate-800 text-amber-400 rounded-xl flex items-center justify-center text-2xl mb-6"><i class="fas fa-cloud-arrow-up"></i></div>
+                <h3 class="text-xl font-bold mb-3 text-white">Ingeniería & Cloud</h3>
+                <p class="text-slate-400 mb-6 text-sm flex-grow">Soluciones de alto nivel. Infraestructura en la nube, recuperación de datos críticos (Forensics) y desarrollo de software a medida.</p>
+                <ul class="text-sm space-y-2 text-slate-300 mb-6 font-medium">
+                    <li><i class="fas fa-check text-amber-400 mr-2"></i> Administración de Servidores</li>
+                    <li><i class="fas fa-check text-amber-400 mr-2"></i> Recuperación de desastres IT</li>
+                    <li><i class="fas fa-check text-amber-400 mr-2"></i> Desarrollo e Integración API</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action (Cierre de Venta) -->
+    <section class="bg-blue-700 py-16">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">No deje la tecnología de su empresa al azar</h2>
+            <p class="text-blue-100 text-lg mb-8">Un fallo en su red o en su sistema de ventas le cuesta más que la prevención. Hablemos hoy mismo sobre cómo optimizar su infraestructura con un contrato de soporte a medida.</p>
+            <a href="https://wa.me/573224754798?text=Hola,%20quiero%20conocer%20los%20planes%20de%20soporte%20IT%20mensual%20de%20Juxta%20Services." target="_blank" class="inline-block bg-white text-blue-800 font-bold px-8 py-4 rounded-lg shadow-lg hover:bg-slate-100 transition-colors">
+                Contactar a un Ingeniero por WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Corporativo -->
+    <footer class="bg-slate-950 border-t border-slate-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-12 mb-12 border-b border-slate-800 pb-12">
+                <!-- Marca -->
+                <div>
+                    <div class="text-2xl font-extrabold tracking-tighter text-blue-500 mb-4">JUXTA<span class="text-white">SERVICES</span></div>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Desarrollamos soluciones tecnológicas y proveemos soporte IT avanzado para blindar y acelerar las empresas en Colombia.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/JuxtaServices/" target="_blank" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/d1dertaker/" target="_blank" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-slate-400 hover:bg-pink-600 hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/eudes-ivan-plazas-olivo-1a6658214/" target="_blank" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-slate-400 hover:bg-blue-500 hover:text-white transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Contacto -->
+                <div>
+                    <h4 class="text-white font-bold mb-4">Contacto Comercial</h4>
+                    <ul class="space-y-3 text-slate-400 text-sm">
+                        <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-500"></i> Yopal, Casanare, Colombia</li>
+                        <li class="flex items-center"><i class="fab fa-whatsapp mr-3 text-green-500"></i> +57 322 475 4798</li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-3 text-blue-500"></i> Soporte B2B Exclusivo</li>
+                    </ul>
+                </div>
+
+                <!-- Enlaces Rápidos -->
+                <div>
+                    <h4 class="text-white font-bold mb-4">Soluciones</h4>
+                    <ul class="space-y-2 text-slate-400 text-sm">
+                        <li><a href="#servicios" class="hover:text-blue-400 transition">Soporte Técnico IT</a></li>
+                        <li><a href="#servicios" class="hover:text-blue-400 transition">Sistemas POS & Menú QR</a></li>
+                        <li><a href="#servicios" class="hover:text-blue-400 transition">Infraestructura de Redes</a></li>
+                        <li><a href="#servicios" class="hover:text-blue-400 transition">Software a Medida</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="text-center text-slate-500 text-xs flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2026 Juxta Services. Todos los derechos reservados.</p>
+                <p class="mt-2 md:mt-0">Ingeniería respaldando su negocio.</p>
             </div>
         </div>
     </footer>
 
 </body>
 </html>
-
